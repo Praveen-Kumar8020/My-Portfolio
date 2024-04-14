@@ -7,7 +7,11 @@ export default {
     './components/**/*.{html,js}',
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      display: ["Cinzel", "serif"],
+      style: ["PT Sans","sans-serif"],
+    },
+
   },
   plugins: [],
 }

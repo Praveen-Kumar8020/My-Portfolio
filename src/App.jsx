@@ -7,6 +7,7 @@ import linkedinn from "./assets/linkedinn.png"
 import github from "./assets/github.png"
 import resume from "./assets/resume.pdf"
 import mail from "./assets/email.png"
+import up  from "./assets/uparrow.png"
 
 function App() {
   
@@ -22,13 +23,13 @@ function App() {
               <ul className='flex gap-4'>
                 
                 <li>
-                  <Link to='project' spy={true} smooth={true} offset={-50} duration={1500} className='text-gray-400 hover:text-white cursor-pointer'>PROJECTS</Link>
+                  <Link to='project' spy={true} smooth={true} offset={-50} duration={1500} className='text-gray-400 hover:text-white cursor-pointer hover:underline underline-offset-4 hover:transition delay-150 duration-300 ease-in-out'>PROJECTS</Link>
                 </li>
                 <li>
-                  <Link to='skills' spy={true} smooth={true} offset={-50} duration={1500} className='text-gray-400 hover:text-white cursor-pointer'>SKILLS</Link>
+                  <Link to='skills' spy={true} smooth={true} offset={-50} duration={1500} className='text-gray-400 hover:text-white cursor-pointer hover:underline underline-offset-4 hover:transition delay-150 duration-300 ease-in-out'>SKILLS</Link>
                 </li>
                 <li>
-                  <Link to='about' spy={true} smooth={true} offset={50} duration={1500} className='text-gray-400 hover:text-white cursor-pointer'>ABOUT</Link>
+                  <Link to='about' spy={true} smooth={true} offset={50} duration={1500} className='text-gray-400 hover:text-white cursor-pointer hover:underline underline-offset-4 hover:transition delay-150 duration-300 ease-in-out'>ABOUT</Link>
                 </li>
               </ul>
             </div>
@@ -40,8 +41,8 @@ function App() {
         <section>
           <div className="container m-auto px-4 pt-12 sm:py-32 flex flex-col sm:flex-row gap-6" >
             <div>
-              <h2 className='font-bold text-4xl'>Hello,<br /> I'm Praveen Kumar</h2>
-              <h2 className='font-bold text-3xl mt-1 gradient-text running-text'>MERN Stack Developer</h2>
+              <h2 className='font-bold text-3xl font-style'>Hello,<br /> I'm Praveen Kumar</h2>
+              <h2 className='font-bold text-3xl mt-1 gradient-text running-text font-display'>MERN Stack Developer</h2>
               <p className='mt-4 text-gray-400 mb-10'>Crafting dynamic web experiences with MERN, transforming ideas into immersive digital realities</p>
               <a href={resume} download="resume.pdf" target="_blank" class=" hover:bg-blue-500  text-white-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                 Download CV
@@ -96,6 +97,7 @@ function App() {
             </div>
             
           </div>
+          
         </section>
 
         <section className='mt-12 ' id='skills'>
