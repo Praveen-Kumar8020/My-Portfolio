@@ -3,6 +3,8 @@ import {Link} from 'react-scroll'
 import Profile from "./assets/profilepic.jpg"
 
 import Proj1 from "./assets/chatsphere.png"
+import Proj2 from "./assets/todo.jpg"
+import Proj3 from "./assets/CodeCraft.png"
 import linkedinn from "./assets/linkedinn.png"
 import github from "./assets/github.png"
 import resume from "./assets/resume.pdf"
@@ -65,7 +67,7 @@ function App() {
             <h2 className='text-4xl font-semibold mt-6'>Projects</h2>
             <div className='flex flex-col sm:flex-row gap-10 mt-11' >
               <div className='border p-5 border-cyan-400 rounded-md flex-1'>
-                <img src={Proj1} alt="" className='rounded-md w-full h-auto' />
+                <img src={Proj1} alt="" className='rounded-md w-full h-3/6' />
                 <h3 className='text-2xl font-semibold mt-8'>ChatSphere</h3>
                 <p className='text-gray-400 text-sm mt-2'>A responsive chatroom platform, fostering real-time connections and vibrant conversations (REACT AND FIREBASE)</p>
                 <div className="flex mt-11 gap-2 " >
@@ -85,15 +87,42 @@ function App() {
               
               
               <div className='border p-5 border-cyan-400 rounded-md flex-1'>
-                <img src={Proj1} alt="" className='rounded-md w-full h-auto' />
-                <h3 className='text-2xl font-semibold mt-8'>ChatSphere</h3>
-                <p className='text-gray-400 text-sm mt-2'>A responsive chatroom platform, fostering real-time connections and vibrant conversations (REACT AND FIREBASE)</p>
-                <div className="flex mt-11  gap-2" >
-                  <button onClick={""} className='px-4 py-2 flex-1 border rounded-full bg-gradient-to-t from-blue-500 to-indigo-900 cursor-pointer hover:from-blue-700 hover:to-cyan-700'>Live Preview</button>
-                  <button className='px-4 py-2 flex-1 border rounded-full cursor-pointer hover:border-blue-500 hover:text-blue-500'>Checkout GitHub</button>
+                <img src={Proj2} alt="" className='rounded-md w-full h-3/6' />
+                <h3 className='text-2xl font-semibold mt-8'>To-Do List</h3>
+                <p className='text-gray-400 text-sm mt-2'>A simple Todo List app built with HTML, CSS, and JavaScript.
+</p>
+                <div className="flex mt-16  gap-2" >
+                  <button onClick={(e) => {
+                      e.preventDefault();
+                      window.location.href='https://pk-to-do.netlify.app/';
+                      }} className='px-4 py-2 flex-1 border rounded-full bg-gradient-to-t from-blue-500 to-indigo-900 cursor-pointer hover:from-blue-700 hover:to-cyan-700'>Live Preview</button>
+                  <button onClick={(e) => {
+                      e.preventDefault();
+                      window.location.href='https://github.com/Praveen-Kumar8020/To-Do-List';
+                      }} className='px-4 py-2 flex-1 border rounded-full cursor-pointer hover:border-blue-500 hover:text-blue-500'>Checkout GitHub</button>
                 </div>
 
               </div>
+
+              <div className='border p-5 border-cyan-400 rounded-md flex-1'>
+                <img src={Proj3} alt="" className='rounded-md w-full h-3/6' />
+                <h3 className='text-2xl font-semibold mt-8'>CodeCraft</h3>
+                <p className='text-gray-400 text-sm mt-2'>CodeCraft: Your virtual workshop for coding mastery. Seamlessly create, edit, and perfect your code with precision in this intuitive online editor. <b className='text-white'>(MERN STACK)</b>
+</p>
+                <div className="flex mt-11  gap-2 text-xl font-semibold " >
+                  Status : In-Progress...
+                  {/* <button onClick={(e) => {
+                      e.preventDefault();
+                      window.location.href='https://pk-to-do.netlify.app/';
+                      }} className='px-4 py-2 flex-1 border rounded-full bg-gradient-to-t from-blue-500 to-indigo-900 cursor-pointer hover:from-blue-700 hover:to-cyan-700'>Live Preview</button>
+                  <button onClick={(e) => {
+                      e.preventDefault();
+                      window.location.href='https://github.com/Praveen-Kumar8020/To-Do-List';
+                      }} className='px-4 py-2 flex-1 border rounded-full cursor-pointer hover:border-blue-500 hover:text-blue-500'>Checkout GitHub</button> */}
+                </div>
+
+              </div>
+
             </div>
             
           </div>
@@ -157,7 +186,7 @@ function App() {
               <h2 className=' font-semibold'>Mongo DB</h2>
               <p className='text-gray-500'>Advanced</p>
             </div>
-            <span className='w-[94%] h-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md mt-2'/>
+            <span className='w-[90%] h-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md mt-2'/>
             </div>
 
             <div className='mt-8'>
@@ -165,7 +194,7 @@ function App() {
               <h2 className=' font-semibold'>Express Js</h2>
               <p className='text-gray-500'>Advanced</p>
             </div>
-            <span className='w-[88%] h-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md mt-2'/>
+            <span className='w-[85%] h-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md mt-2'/>
             </div>
              
              <div className='mt-8'>
@@ -173,7 +202,7 @@ function App() {
               <h2 className=' font-semibold'>Node Js</h2>
               <p className='text-gray-500'>Advanced</p>
             </div>
-            <span className='w-[90%] h-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md mt-2'/>
+            <span className='w-[84%] h-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md mt-2'/>
             </div>
 
             </div>
@@ -194,6 +223,9 @@ function App() {
               </div>
               <div>
                 <p className='font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-5 before:absolute relative left-6 '>MySQL</p>
+              </div>
+               <div>
+                <p className='font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-5 before:absolute relative left-6 '>OOPS</p>
               </div>
             </div>
            </div>
