@@ -43,8 +43,8 @@ function App() {
         <section>
           <div className="container m-auto px-4 pt-12 sm:py-32 flex flex-col sm:flex-row gap-6" >
             <div>
-              <h2 className='font-bold text-3xl font-style'>Hello,<br /> I'm Praveen Kumar</h2>
-              <h2 className='font-bold text-3xl mt-1 gradient-text running-text font-display'>MERN Stack Developer</h2>
+              <h2 className='font-bold text-xl font-style'>Hello,<br /> I'm Praveen Kumar</h2>
+              <h2 className='font-bold text-2xl mt-1 gradient-text running-text font-display'>MERN Stack Developer</h2>
               <p className='mt-4 text-gray-400 mb-10'>Crafting dynamic web experiences with MERN, transforming ideas into immersive digital realities</p>
               <a href={resume} download="resume.pdf" target="_blank" class=" hover:bg-blue-500  text-white-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                 Download CV
